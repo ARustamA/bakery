@@ -9,7 +9,7 @@
   height: 100vh;
   background-image: url(../public/image/background.jpg);
   position: relative;
- 
+
   
 }
 .main::before {
@@ -21,8 +21,39 @@
   height: 100%;
   width: 100%;
   z-index: 1;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
 }
 .content{
-  color: #fff;
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  padding-top: 2%;
+  color: #ffcc99;
+  z-index: 2;
+  h1{
+    font-size: 3em;
+    margin-left: 13%;
+    width: 50%;
+    margin-bottom: 1%;
+  }
+  span{
+    font-size: 1.8em;
+    margin:  1% 13%;
+    width: 50%;
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.pic{
+  position: absolute;
+  top: 15%;
+  right: 3%;
+  width: 33%;
+  height: 43%;
+  border-radius: 10%;
+  box-shadow: 1px 1px 7px 1px darken(#ffa500, 15%);
 }
