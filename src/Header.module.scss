@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   display: flex;
-  align-items: center;
+  align-items: center; 
   color: #ff4f00;
   width: 100vw;
   height: 5em;
@@ -37,6 +37,7 @@ svg {
   height: 40px;
   margin: 0 1em;
   cursor: pointer;
+  opacity: 0.8;
 }
 
 // .logo {
@@ -48,7 +49,7 @@ svg {
 // }
 .phone {
   // color:inherit;
-  font-size: 2em;
+  font-size: 1.7em;
   // margin-right: 10%;
 }
 .menu{
@@ -56,9 +57,9 @@ svg {
   font-size: 1.5em;
   ul{
     display: grid;
-    
+    cursor: pointer;
     grid-template-columns: 3.5em 3.5em 3.5em 3.5em 3.5em ;
-    gap:1em;
+    gap:1.5em;
     
   }
   
