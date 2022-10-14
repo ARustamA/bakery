@@ -9,18 +9,46 @@ import img6 from "./image/666.png";
 import img7 from "./image/777.png";
 import img8 from "./image/888.png";
 
+
 import style from './About.module.scss';
 
 
 export const About = () => {
+  const table = [
+    { title: '25 дней до открытия', text: 'Меньше месяца до открытия Вашей пекарни', id: 1 },
+    { title: 'Передовые технологии', text: 'Будут использоваться в ведении Вашего бизнеса', id: 2 },
+    { title: 'Обучение', text: 'Обучим Вашу команду на наших действующих производствах', id: 3 },
+    { title: 'Локация', text: 'Правильно выбранная локация — 80% успеха', id: 4 },
+    { title: 'Личный маркетолог', text: 'Вам не придется беспокоиться о продвижении пекарни', id: 5 },
+    { title: 'Готовы к сотрудничеству?', text: 'Оставить заявку', id: 6 },
+  ]
   return (
     <div className={style.container} id='about'>
       <div className={style.content}>
         <div className={style.text}>
-        <span>
-          Почему уже более Вам нужно выбрать именно нашу ?
-        </span>
-        
+          <span>
+            Мы, команда профессионалов из <b>Наубайхан.kz</b>, предлагаем готовое бизнес-решения для открытия собственной пекарни.
+          </span>
+          <span>
+            Почему Вам нужно выбрать именно нашу <b>Наубайхан.kz</b>?
+          </span>
+          <div className={style.why}>
+
+            {
+              (table.map(item =>
+                <div className={style.field}>
+                  <h3 className={style.whyTitle} key={item.id}>
+                    {item.title}
+                  </h3>
+                  <span className={style.whyText}>
+                    {item.text}
+                  </span>
+                </div>
+              ))
+            }
+
+
+          </div>
           <span>
             Все еще сомневаетесь в выборе, оставьте контакты и мы вам обязательно перезвоним.
             <button className={style.button}>Оставить номер</button>

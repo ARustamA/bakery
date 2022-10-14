@@ -8,18 +8,11 @@
   width: 100vw;
   height: 5em;
   background-color: #ffcc99;
-  
+  border-bottom: 0.2em dotted #fff;
   // 
   z-index: 3;
   padding: 0 5%;
-  &::after {
-    position: absolute;
-    top: 4%;
-    width: 1px;
-    height: 1px;
-    content: '';
-    border-bottom: 1px solid #000;
-  }
+
   a{
     color: #ff4f00;
   }
@@ -58,9 +51,9 @@ svg {
   ul{
     display: grid;
     cursor: pointer;
-    grid-template-columns: 3.5em 3.5em 3.5em 3.5em 3.5em ;
+    grid-template-columns: 3.5em 3.5em 3.5em 3.5em 3.5em;
     gap:1.5em;
-    
+      
   }
   
 }
