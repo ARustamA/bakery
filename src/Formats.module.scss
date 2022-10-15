@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-  color: #ff4f00;
+  color: #f3a400;
   position: relative;
   
   
@@ -16,11 +16,88 @@
   display: flex;
   flex-direction: column;
   h2{
-    margin: 0 auto;
+    margin: 1em auto;
     font-size: 2em;
+    text-shadow: 1px 1px 2px #000, 0 0 1em #ffa500;
   }
  
 }
+
+
+
+
+
+
+.img1 {
+  position: absolute;
+  top: 3em;
+  left: 4%;
+  width: 4em;
+  height: 4em;
+  opacity: 0.4;
+}
+.img2 {
+  position: absolute;
+  top: 40em;
+  left: 14%;
+  width: 4em;
+  height: 4em;
+  opacity: 0.4;
+}
+.img3 {
+  position: absolute;
+  top: 5em;
+  left: 90%;
+  width: 4em;
+  height: 4em;
+  opacity: 0.4;
+}
+.img4 {
+  position: absolute;
+  top: 7em;
+  left: 68%;
+  width: 4em;
+  height: 4em;
+  opacity: 0.4;
+}
+.img5 {
+  position: absolute;
+  top: 37em;
+  left: 88%;
+  width: 4em;
+  height: 4em;
+  opacity: 0.4;
+}
+.img6 {
+  position: absolute;
+  top: 30em;
+  left: 10%;
+  width: 4em;
+  height: 4em;
+  opacity: 0.4;
+}
+.img7 {
+  position: absolute;
+  top: 12em;
+  left: 24%;
+  width: 4em;
+  height: 4em;
+  opacity: 0.4;
+}
+.img8 {
+  position: absolute;
+  top: 40em;
+  left: 74%;
+  width: 4em;
+  height: 4em;
+  opacity: 0.4;
+}
+
+
+
+
+
+
 .arrowDawn {
   z-index: 3;
   cursor: pointer;

@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React,{useContext} from 'react'
+import AppContext from './context'
 import img1 from "./image/stage/1.png";
 import img2 from "./image/stage/2.png";
 import img3 from "./image/stage/3.png";
@@ -16,7 +16,8 @@ import img13 from "./image/stage/XX.webp";
 
 import style from './Stages.module.scss';
 
-export const Stages = () => {
+export const Stages = ({active, setActive}) => {
+   const {popupActive, setPopupActive}=useContext(AppContext);
    const stageItems = [
       { title: 'Подписание', text: 'договора концессии', img: img1, id: 1 },
       { title: 'Оплата', text: 'паушального взноса', img: img2, id: 2 },

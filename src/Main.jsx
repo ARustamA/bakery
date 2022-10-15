@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React,{useContext} from 'react'
+import AppContext from './context'
 import { Header } from './Header';
 
 import pic from "./image/pic.avif";
@@ -8,6 +8,7 @@ import pic1 from "./image/99.jpg";
 import style from './Main.module.scss';
 
 export const Main = () => {
+const {popupActive, setPopupActive}=useContext(AppContext);
 
   return (
     <div className={style.main} id='main'>
@@ -17,12 +18,14 @@ export const Main = () => {
           <h1> Добро пожаловать в Наубайхан.kz</h1>
           
           <span> Посмотрите как мы работаем</span>
-          <button className={style.button}>Скачать презентацию</button>
+          <button className={style.button}
+          
+            >Скачать презентацию</button>
           <span>
             Вы сможете встретиться с управляющим одной из пекарен,
             задать ему вопросы лично, узнать нюансы и этапы производства выпечки.
           </span>
-          <button className={style.button}>Экскурсия в пекарню</button>
+          <button className={style.button} onClick={()=>setPopupActive(true)}>Экскурсия в пекарню</button>
         </div>
         
         <img src={pic1} className={style.pic1} alt="bakery" />
