@@ -20,7 +20,7 @@ export const About = () => {
     { title: 'Обучение', text: 'Обучим Вашу команду на наших действующих производствах', id: 3 },
     { title: 'Локация', text: 'Правильно выбранная локация — 80% успеха', id: 4 },
     { title: 'Личный маркетолог', text: 'Вам не придется беспокоиться о продвижении пекарни', id: 5 },
-    { title: 'Готовы к сотрудничеству?', text: 'Оставить заявку', id: 6 },
+    { title: 'Готовы к сотрудничеству?', text: 'Да, готов!', id: 6 },
   ]
   return (
     <div className={style.container} id='about'>
@@ -40,9 +40,13 @@ export const About = () => {
                   <h3 className={style.whyTitle} key={item.id}>
                     {item.title}
                   </h3>
-                  <span className={style.whyText}>
-                    {item.text}
-                  </span>
+                  {
+                    item.id === 6
+                      ? <button>{item.text}</button>
+                      : <span className={style.whyText}> {item.text}
+                      </span>
+                  }
+
                 </div>
               ))
             }

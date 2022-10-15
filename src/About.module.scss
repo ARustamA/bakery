@@ -1,8 +1,8 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: #ffcc99;
-  color: #ff4f00;
+  background-color: #fff;
+  color: #f3a400;
   position: relative;
   
 }
@@ -27,16 +27,20 @@
   grid-template-columns: 1fr 1fr 1fr;
   width: 55%;
   padding-left: 2em;
+  button:hover{
+    background-color: #f3a200;
+  }
 }
 .field{
 padding: 0.5em;
-background-color: #fff;
+background-color: #eee;
 border-radius: 2em;
 margin: 0.2em;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content:baseline;
+
+text-align:center ;
 
 width: 20em;
 box-shadow: 1px 3px 1px 0px darken(#f3a200, 15%);
