@@ -1,12 +1,17 @@
 import React from 'react'
+
+import { Header } from './Header';
+
 import pic from "./image/pic.avif";
 import pic1 from "./image/99.jpg";
+
 import style from './Main.module.scss';
 
 export const Main = () => {
 
   return (
     <div className={style.main} id='main'>
+      <Header />
       <div className={style.content}>
         <div className={style.text}>
           <h1> Добро пожаловать в Наубайхан.kz</h1>

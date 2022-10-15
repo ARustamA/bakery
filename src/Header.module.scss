@@ -1,28 +1,28 @@
 .header {
-  position: sticky;
+  position:relative;
   top: 0;
   left: 0;
   display: flex;
-  align-items: center; 
+  align-items: center;
   color: #ff4f00;
   width: 100vw;
   height: 5em;
   background-color: #ffcc99;
-  border-bottom: 0.2em dotted #fff;
-  // 
+  //border-bottom: 0.2em dotted #fff;
+  //
   z-index: 3;
   padding: 0 5%;
 
-  a{
+  a {
     color: #ff4f00;
   }
 }
-.social{
+.social {
   display: flex;
   align-items: center;
   margin: 0 1%;
-  position:absolute;
-  right: 10%; 
+  position: absolute;
+  right: 10%;
 }
 
 svg {
@@ -45,15 +45,18 @@ svg {
   font-size: 1.7em;
   // margin-right: 10%;
 }
-.menu{
-  width: 3em;
+.menu {
+  width: 4em;
   font-size: 1.5em;
-  ul{
-    display: grid;
+  .ul {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    grid-template-columns: 3.5em 3.5em 3.5em 3.5em 3.5em;
-    gap:1.5em;
-      
+    li {
+      white-space: nowrap;
+      margin-left: 1em;
+      width: 4em;
+      height: 1em;
+    }
   }
-  
 }

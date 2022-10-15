@@ -4,6 +4,7 @@
   background-color: #ffcc99;
   color: #ff4f00;
   position: relative;
+  
 }
 
 .content {
@@ -17,7 +18,7 @@
   .text {
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
+    margin-top: 4em;
   }
 }
 
@@ -40,9 +41,10 @@ justify-content:baseline;
 width: 20em;
 box-shadow: 1px 3px 1px 0px darken(#f3a200, 15%);
   h3{
-    margin-top: 1em;
+      margin-top: 1em;
       font-size: 1.3em;
       margin-bottom: 0.5em;
+      text-shadow: 1px 1px 2px black, 0 0 1em #f3a200;
   }
   .whyText{
     font-size: 1.2em;
@@ -130,4 +132,32 @@ box-shadow: 1px 3px 1px 0px darken(#f3a200, 15%);
   width: 4em;
   height: 4em;
   opacity: 0.4;
+}
+
+
+
+.arrowDawn {
+  z-index: 3;
+  cursor: pointer;
+  position: absolute;
+  bottom: 2em;
+  margin: 0 46%;
+  animation: 2s move;
+  &:hover {
+    stroke: #ffa500;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(50%);
+    stroke: #ffa500;
+    
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
