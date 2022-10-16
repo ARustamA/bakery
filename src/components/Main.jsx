@@ -1,4 +1,4 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react'
 import AppContext from '../context'
 import { Header } from './Header';
 
@@ -8,29 +8,29 @@ import pic1 from "./image/99.jpg";
 import style from './Main.module.scss';
 
 export const Main = () => {
-const {popupActive, setPopupActive}=useContext(AppContext);
+  const { popupActive, setPopupActive } = useContext(AppContext);
 
   return (
     <div className={style.main} id='main'>
       <Header />
       <div className={style.content}>
         <div className={style.text}>
-          <h1> Добро пожаловать в Наубайхан.kz</h1>
-          
+          <h1> Добро пожаловать в Наубайхана.kz</h1>
+
           <span> Посмотрите как мы работаем</span>
           <button className={style.button}
-          
-            >Скачать презентацию</button>
+
+          >Скачать презентацию</button>
           <span>
             Вы сможете встретиться с управляющим одной из пекарен,
             задать ему вопросы лично, узнать нюансы и этапы производства выпечки.
           </span>
-          <button className={style.button} onClick={()=>setPopupActive(true)}>Экскурсия в пекарню</button>
+          <button className={style.button} onClick={() => setPopupActive(true)}>Экскурсия в пекарню</button>
         </div>
-        
+
         <img src={pic1} className={style.pic1} alt="bakery" />
         <img src={pic} className={style.pic} alt="bakery" />
-        
+
 
 
       </div>
