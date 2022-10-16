@@ -1,14 +1,14 @@
 import React,{useContext} from 'react'
-import AppContext from './context'
-import img0 from "./image/6.webp";
-import img1 from "./image/2.png";
-import img2 from "./image/22.png";
-import img3 from "./image/10.png";
-import img4 from "./image/111.png";
-import img5 from "./image/555.png";
-import img6 from "./image/666.png";
-import img7 from "./image/777.png";
-import img8 from "./image/888.png";
+import AppContext from '../context'
+import img0 from "../image/6.webp";
+import img1 from "../image/2.png";
+import img2 from "../image/22.png";
+import img3 from "../image/10.png";
+import img4 from "../image/111.png";
+import img5 from "../image/555.png";
+import img6 from "../image/666.png";
+import img7 from "../image/777.png";
+import img8 from "../image/888.png";
 
 
 import style from './About.module.scss';
@@ -38,7 +38,7 @@ export const About = () => {
 
             {
               (table.map(item =>
-                <div className={style.field}>
+                <div className={style.field} key={item.id}>
                   <h3 className={style.whyTitle} key={item.id}>
                     {item.title}
                   </h3>
@@ -56,7 +56,8 @@ export const About = () => {
 
           </div>
           <span>
-            Все еще сомневаетесь в выборе? Оставьте контакты и мы вам обязательно перезвоним.
+            Все еще сомневаетесь в выборе? 
+            <p>Оставьте контакты и мы вам обязательно перезвоним.</p>
             <button className={style.button} onClick={()=>setPopupActive(true)}>Оставить номер</button>
           </span>
         </div>

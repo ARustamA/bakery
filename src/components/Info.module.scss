@@ -1,0 +1,138 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  color: #fff;
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(../image/back3.jpg);
+}
+.container::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6), 0 0 20px 1px rgba(0, 0, 0, 0.9);
+}
+
+.content {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 2fr;
+  gap: 1em;
+  justify-content: space-between;
+  padding-top: 3em;
+  margin: 0 6em;
+  .text {
+    margin: 1em 6em;
+    svg {
+      width: 2em;
+      height: 2em;
+      margin: 0.5em;
+    }
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+  z-index: 3;
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-indent: 1em;
+    margin-bottom: 1em;
+  }
+  h3 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+
+  .form {
+    position: absolute;
+    top: 8em;
+    right: 5em;
+    z-index: 3;
+    width: 30%;
+    height: 90%;
+    border-radius: 0 3em;
+    background-color: #d3cbcb;
+    box-shadow: 0px 0px 7px 0px darken(#fdfcfa, 15%);
+    h2,
+    h3,
+    span {
+      color: #000;
+    }
+  }
+}
+
+.bottom {
+  position: absolute;
+  z-index: 3;
+  bottom: 2em;
+  margin-left: 12em;
+  display: flex;
+  align-items: center;
+  
+  white-space: nowrap;
+  a {
+    color: #fff;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    margin: 0 1%;
+
+    right: 10%;
+    svg {
+      width: 30px;
+      height: 30px;
+      margin: 0 1em;
+      cursor: pointer;
+      opacity: 0.8;
+      transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    }
+    svg:hover {
+      transform: translateY(-4px);
+    }
+  }
+  .menu {
+    margin-right: 5em;
+    ul {
+      display: flex;
+      li {
+        margin: 1em;
+      }
+      a {
+        font-size: 1em;
+        font-weight: 600;
+      }
+    }
+  }
+  .contact{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    h3{
+      color:#ffa500;
+      text-shadow: 1px 1px 2px #000, 0 0 1em #fff;
+    }
+    a{
+      margin: 0.2em;
+    }
+  }
+}

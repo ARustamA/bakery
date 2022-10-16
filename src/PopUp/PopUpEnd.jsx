@@ -12,7 +12,7 @@ export const PopUpEnd = () => {
                </svg>
                <h2>Данные успешно отправлены</h2>
             </div>
-            <p>Мы свяжемся с вами вближайшее время</p>
+            <span>Мы свяжемся с вами вближайшее время</span>
 
             <div className={style.contentCenter}>
                <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">

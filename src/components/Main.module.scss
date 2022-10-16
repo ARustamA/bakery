@@ -7,7 +7,7 @@
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-image: url(../public/image/background.jpg);
+  background-image: url(../image/background.jpg);
   position: relative;
 }
 .main::before {
@@ -38,7 +38,7 @@
   }
   span{
     font-size: 1.5em;
-    margin: 1% 0;
+    margin: 2% 0;
   }
   h2 {
     font-size: 1.6em;
@@ -48,17 +48,17 @@
     display: flex;
     flex-direction: column;
     margin-left: 11%;
-    width: 50%;
+    width: 40%;
   }
 }
 .pic {
   position: absolute;
   top: 35%;
-  right: 5%;
+  right: 13%;
   width: 33%;
   height: 53%;
   border-radius: 10%;
-  box-shadow: 1px 1px 7px 1px darken(#ffa500, 15%);
+  box-shadow: 1px 1px 7px 1px darken(#f8f6f4, 15%);
 
   transition: 0.6s;
   display: block;
@@ -70,11 +70,11 @@
 .pic1 {
   position: absolute;
   top: 25%;
-  right: 2%;
+  right: 10%;
   width: 33%;
   height: 53%;
   border-radius: 10%;
-  box-shadow: 1px 1px 7px 1px darken(#ffa500, 15%);
+  box-shadow: 1px 1px 7px 1px darken(#f8f6f4, 15%);
 }
 
 .arrowDawn {

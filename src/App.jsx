@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import AppContext from './context'
-import { About } from './About';
-import { Main } from './Main';
-import { Stages } from './Stages';
-import { Formats } from './Formats';
-import { Info } from './Info';
+import { About } from './components/About';
+import { Main } from './components/Main';
+import { Stages } from './components/Stages';
+import { Formats } from './components/Formats';
+import { Info } from './components/Info';
 import { PopUp } from './PopUp/PopUp';
 
 import style from './App.module.scss';

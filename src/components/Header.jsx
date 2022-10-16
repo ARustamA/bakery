@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import AppContext from './context'
+import AppContext from '../context'
 import style from './Header.module.scss';
 
 export const Header = () => {
@@ -13,7 +13,7 @@ export const Header = () => {
   ]
   return (
     <header className={style.header}>
-      <a href="tel:+78005556807" className={style.phone}>+7 800 555 68 07</a>
+      <a href="tel:+7800000000" className={style.phone}>+7 800 000 00 00</a>
       <div className={style.menu}>
         <ul className={style.ul}>
           {menuItems.map(item =>

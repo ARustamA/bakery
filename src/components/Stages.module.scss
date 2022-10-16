@@ -13,7 +13,7 @@
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-image: url(../public/image/back2.jpg);
+  background-image: url(../image/back2.jpg);
 }
 .container::before {
   position: absolute;
@@ -112,7 +112,7 @@
     svg {
       position: absolute;
       top: 1.8em;
-      right: -5em;
+      right: -4.4em;
       width: 4em;
       height: 5em;
     }

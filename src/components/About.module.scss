@@ -11,9 +11,13 @@
   display: flex;
   flex-direction: column;
   span {
+    text-indent: 1em;
     font-size: 1.8em;
     margin: 1% 9%;
     width: 70%;
+  }
+  p{
+    margin: 0.5em;
   }
   .text {
     display: flex;
@@ -24,12 +28,17 @@
 
 .why{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   width: 55%;
   padding-left: 2em;
-  button:hover{
-    background-color: #f3a200;
+  button{
+    
+    &:hover{
+    background-color: #ffc552;
+    color: #000;
   }
+  }
+  
 }
 .field{
 padding: 0.5em;
@@ -54,7 +63,9 @@ box-shadow: 1px 3px 1px 0px darken(#f3a200, 15%);
     font-size: 1.2em;
   }
 }
-
+.button{
+  margin-left: 15%;
+}
 
 .img0 {
   position: absolute;

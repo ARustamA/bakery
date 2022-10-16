@@ -1,22 +1,22 @@
 import React,{useContext} from 'react'
-import AppContext from './context'
-import img1 from "./image/stage/1.png";
-import img2 from "./image/stage/2.png";
-import img3 from "./image/stage/3.png";
-import img4 from "./image/stage/4.png";
-import img5 from "./image/stage/5.png";
-import img6 from "./image/stage/6.png";
-import img7 from "./image/stage/7.png";
-import img8 from "./image/stage/8.png";
-import img9 from "./image/stage/9.png";
-import img10 from "./image/stage/10.png";
-import img11 from "./image/stage/11.png";
-import img12 from "./image/stage/12.png";
-import img13 from "./image/stage/XX.webp";
+import AppContext from '../context'
+import img1 from "../image/stage/1.png";
+import img2 from "../image/stage/2.png";
+import img3 from "../image/stage/3.png";
+import img4 from "../image/stage/4.png";
+import img5 from "../image/stage/5.png";
+import img6 from "../image/stage/6.png";
+import img7 from "../image/stage/7.png";
+import img8 from "../image/stage/8.png";
+import img9 from "../image/stage/9.png";
+import img10 from "../image/stage/10.png";
+import img11 from "../image/stage/11.png";
+import img12 from "../image/stage/12.png";
+import img13 from "../image/stage/XX.webp";
 
 import style from './Stages.module.scss';
 
-export const Stages = ({active, setActive}) => {
+export const Stages = () => {
    const {popupActive, setPopupActive}=useContext(AppContext);
    const stageItems = [
       { title: 'Подписание', text: 'договора концессии', img: img1, id: 1 },
@@ -41,7 +41,7 @@ export const Stages = ({active, setActive}) => {
 
                {
                   stageItems.map(item =>
-                     <div className={style.items}>
+                     <div className={style.items} key={item.id}>
                         <h4>{item.title}</h4>
                         <span>{item.text}</span>
                         <img src={item.img} alt={stageItems.title} />
@@ -58,7 +58,7 @@ export const Stages = ({active, setActive}) => {
             <img className={style.picBakery} src={img13} alt="bakery" />
             <div className={style.bottom}>
                <h3>От идеи до пекарни один клик!</h3>
-               <button>Запросить договор концессии</button>
+               <button onClick={()=>setPopupActive(true)}>Запросить договор концессии</button>
             </div>
 
          </div>

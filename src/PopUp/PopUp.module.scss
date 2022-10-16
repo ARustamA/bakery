@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #fff;
+  background: #f7931e;
   z-index: 10;
   transition: 0.5s all;
   display: flex;
@@ -60,6 +60,7 @@
   }
 
   .content {
+
     display: flex;
     flex-direction: column;
     p {
