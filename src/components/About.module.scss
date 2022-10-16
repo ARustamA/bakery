@@ -17,20 +17,13 @@
     width: 70%;
   }
   p{
-    margin: 0.5em;
+    margin: 0.3em;
   }
   .text {
     display: flex;
     flex-direction: column;
     margin-top: 4em;
   }
-}
-
-.why{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 55%;
-  padding-left: 2em;
   button{
     
     &:hover{
@@ -38,6 +31,15 @@
     color: #000;
   }
   }
+}
+
+.why{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 55%;
+  padding-left: 1em;
+  z-index: 5;
+
   
 }
 .field{
