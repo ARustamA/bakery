@@ -28,9 +28,9 @@ export const About = () => {
     <div className={style.container} id='about'>
       <div className={style.content}>
         <div className={style.text}>
-          <span>
+          <h2>
             Мы, команда профессионалов из <b>Наубайхан.kz</b>, предлагаем готовое бизнес-решения для открытия собственной пекарни.
-          </span>
+          </h2>
           <span>
             Почему Вам нужно выбрать именно нашу <b>Наубайхан.kz</b>?
           </span>
@@ -56,8 +56,9 @@ export const About = () => {
 
           </div>
           <span>
-            Все еще сомневаетесь в выборе? 
-            <p>Оставьте контакты и мы вам обязательно перезвоним.</p>
+            <p>Все еще сомневаетесь в выборе? </p>
+            
+            <p className={style.txt}>Оставьте контакты и мы вам обязательно перезвоним.</p>
             <button className={style.button} onClick={()=>setPopupActive(true)}>Оставить номер</button>
           </span>
         </div>
