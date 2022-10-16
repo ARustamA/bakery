@@ -2,8 +2,8 @@ import React,{useContext} from 'react'
 import AppContext from '../context'
 import { Header } from './Header';
 
-import pic from "../image/pic.avif";
-import pic1 from "../image/99.jpg";
+import pic from "./image/pic.avif";
+import pic1 from "./image/99.jpg";
 
 import style from './Main.module.scss';
 

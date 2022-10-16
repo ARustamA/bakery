@@ -5,7 +5,7 @@ import { Main } from './components/Main';
 import { Stages } from './components/Stages';
 import { Formats } from './components/Formats';
 import { Info } from './components/Info';
-import { PopUp } from './PopUp/PopUp';
+import { PopUp } from './components/PopUp/PopUp';
 
 import style from './App.module.scss';
 

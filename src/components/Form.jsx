@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
-import style from '../PopUp/PopUpSend.module.scss';
+import style from './PopUp/PopUpSend.module.scss';
 
 
 export const Form = ({ popupActive, setPopupActive }) => {

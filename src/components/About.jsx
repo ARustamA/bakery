@@ -1,14 +1,14 @@
 import React,{useContext} from 'react'
 import AppContext from '../context'
-import img0 from "../image/6.webp";
-import img1 from "../image/2.png";
-import img2 from "../image/22.png";
-import img3 from "../image/10.png";
-import img4 from "../image/111.png";
-import img5 from "../image/555.png";
-import img6 from "../image/666.png";
-import img7 from "../image/777.png";
-import img8 from "../image/888.png";
+import img0 from "./image/6.webp";
+import img1 from "./image/2.png";
+import img2 from "./image/22.png";
+import img3 from "./image/10.png";
+import img4 from "./image/111.png";
+import img5 from "./image/555.png";
+import img6 from "./image/666.png";
+import img7 from "./image/777.png";
+import img8 from "./image/888.png";
 
 
 import style from './About.module.scss';
