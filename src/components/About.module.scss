@@ -40,6 +40,11 @@
     display: flex;
     font-size: 0.8em;
     color: #000;
+    button{
+      &:hover{
+        background-color: #eeeeee;
+      }
+    }
   }
 }
 
@@ -52,7 +57,7 @@
 .field {
   padding: 0.5em;
   background-color: #d7d3d3;
-  color:#fff;
+  color:#f3a400;
   border-radius: 2em;
   border: 1px solid rgb(193, 177, 177);
   
@@ -76,7 +81,7 @@
     margin-top: 1em;
     border: 1px solid #0a0a09;
     width: 80%;
-    color:#fff
+    color:#f3a400;
   }
 }
 
