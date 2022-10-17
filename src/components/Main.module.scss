@@ -33,18 +33,19 @@
   z-index: 2;
   h1 {
     font-size: 4em;
-    margin: 2%;
+    margin: 2% 0;
     font-weight: 700;
+  }
+  h2 {
+    font-size: 1.6em;
+    margin: 1% 0;
   }
   span{
     text-indent: 1em;
     font-size: 1.5em;
     margin: 2% 0;
   }
-  h2 {
-    font-size: 1.6em;
-    margin: 1% 0;
-  }
+  
   .text {
     display: flex;
     flex-direction: column;
@@ -56,8 +57,9 @@
   position: absolute;
   top: 35%;
   right: 13%;
-  width: 33%;
-  height: 53%;
+
+  max-width: 43%;
+  max-height: 53%;
   border-radius: 10%;
   box-shadow: 1px 1px 7px 1px darken(#f8f6f4, 15%);
 
@@ -72,8 +74,8 @@
   position: absolute;
   top: 25%;
   right: 10%;
-  width: 33%;
-  height: 53%;
+  max-width: 43%;
+  max-height: 53%;
   border-radius: 10%;
   box-shadow: 1px 1px 7px 1px darken(#f8f6f4, 15%);
 }
@@ -102,3 +104,4 @@
     transform: translateY(0%);
   }
 }
+

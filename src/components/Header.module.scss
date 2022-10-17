@@ -21,7 +21,7 @@
   align-items: center;
   margin: 0 1%;
   position: absolute;
-  right: 5%;
+  right: 4%;
   svg {
     width: 1.8em;
     height: 1.8em;
@@ -36,15 +36,13 @@
 }
 
 .phone {
-  // color:inherit;
   font-size: 1.3em;
-  // margin-right: 10%;
 }
 .menu {
   width: 4em;
   font-size: 1.5em;
   text-shadow: 1px 1px 2px #000, 0 0 1em #fff;
- 
+
   z-index: 5;
   .ul {
     display: flex;
@@ -55,6 +53,32 @@
       margin-left: 1em;
       width: 4em;
       height: 1em;
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .header {
+    padding: 0 3%;
+  }
+  .phone {
+    font-size: 1.1em;
+  }
+  .menu {
+    margin-right: 2em;
+    width: 4em;
+    font-size: 1.3em;
+    li {
+      margin-left: 0.5em;
+      width: 3em;
+      height: 1em;
+    }
+  }
+  .social {
+    right: 4%;
+    svg {
+      width: 1.7em;
+      height: 1.7em;
+      margin: 0 0.3em;
     }
   }
 }
