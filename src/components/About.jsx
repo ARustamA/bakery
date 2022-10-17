@@ -1,4 +1,4 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react'
 import AppContext from '../context'
 import img0 from "./image/6.webp";
 import img1 from "./image/2.png";
@@ -15,7 +15,7 @@ import style from './About.module.scss';
 
 
 export const About = () => {
-  const {popupActive, setPopupActive}=useContext(AppContext);
+  const { popupActive, setPopupActive } = useContext(AppContext);
   const table = [
     { title: '25 дней до открытия', text: 'Меньше месяца до открытия Вашей пекарни', id: 1 },
     { title: 'Передовые технологии', text: 'Будут использоваться в ведении Вашего бизнеса', id: 2 },
@@ -44,7 +44,7 @@ export const About = () => {
                   </h3>
                   {
                     item.id === 6
-                      ? <button onClick={()=>setPopupActive(true)}>{item.text}</button>
+                      ? <button onClick={() => setPopupActive(true)}>{item.text}</button>
                       : <span className={style.whyText}> {item.text}
                       </span>
                   }
@@ -55,11 +55,15 @@ export const About = () => {
 
 
           </div>
-          <span>
-            <p>Все еще сомневаетесь в выборе? </p>
-            
-            <p className={style.txt}>Оставьте контакты и мы вам обязательно перезвоним.</p>
-            <button className={style.button} onClick={()=>setPopupActive(true)}>Оставить номер</button>
+          <span >
+            <h3>Все еще сомневаетесь в выборе? </h3>
+            <span className={style.txt}>
+              Оставьте контакты и мы вам обязательно перезвоним.
+              <button onClick={() => setPopupActive(true)}>Оставить номер</button>
+            </span>
+
+
+
           </span>
         </div>
         <img src={img0} className={style.img0} alt="img0" />

@@ -44,7 +44,9 @@
   span{
     text-indent: 1em;
     font-size: 1.5em;
-    margin: 2% 0;
+    margin: 3% 0;
+    line-height: 125%;
+
   }
   
   .text {
@@ -112,6 +114,12 @@
 }
 
 @media screen and (max-width: 1366px) {
+  .content{
+    padding-top: 3%;
+    h1 {
+      font-size: 3.5em;
+    }
+  }
   .pic,.pic1{
     max-width: 43%;
     max-height: 53%;

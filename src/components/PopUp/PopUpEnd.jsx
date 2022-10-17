@@ -11,8 +11,9 @@ export const PopUpEnd = () => {
                   <path d="M2.65833 12.7937L15.0237 25.1591L37.3418 2.84106" stroke="#000" strokeWidth="6" />
                </svg>
                <h2>Данные успешно отправлены</h2>
+
             </div>
-            <span>Мы свяжемся с вами вближайшее время</span>
+            <h3>Мы свяжемся с вами вближайшее время</h3>
 
             <div className={style.contentCenter}>
                <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,7 +21,7 @@ export const PopUpEnd = () => {
                </svg>
                <span>г. Орехово-Зуево, ул. Ленина 84</span>
                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_456_371)">
+                  <g clipPath="url(#clip0_456_371)">
                      <path d="M12 24C5.4 24 0 18.6 0 12C0 5.4 5.4 0 12 0C18.6 0 24 5.4 24 12C24 18.6 18.6 24 12 24ZM12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2Z" fill="#F7931E" />
                      <path d="M12 13C11.4 13 11 12.6 11 12V5C11 4.4 11.4 4 12 4C12.6 4 13 4.4 13 5V12C13 12.6 12.6 13 12 13Z" fill="#F7931E" />
                      <path d="M16 17C15.7 17 15.5 16.9 15.3 16.7L11.3 12.7C10.9 12.3 10.9 11.7 11.3 11.3C11.7 10.9 12.3 10.9 12.7 11.3L16.7 15.3C17.1 15.7 17.1 16.3 16.7 16.7C16.5 16.9 16.3 17 16 17Z" fill="#F7931E" />
