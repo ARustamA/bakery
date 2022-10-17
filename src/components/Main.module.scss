@@ -9,6 +9,7 @@
   height: 100vh;
   background-image: url(./image/background.jpg);
   position: relative;
+  
 }
 .main::before {
   position: absolute;
@@ -105,3 +106,7 @@
   }
 }
 
+
+@media screen and (max-width: 1300px) {
+
+}

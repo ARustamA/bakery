@@ -21,7 +21,10 @@
   align-items: center;
   margin: 0 1%;
   position: absolute;
-  right: 4%;
+  right: 6%;
+  button{
+    margin-left: 2em;
+  }
   svg {
     width: 1.8em;
     height: 1.8em;
@@ -40,6 +43,7 @@
 }
 .menu {
   width: 4em;
+  margin-left: 2em;
   font-size: 1.5em;
   text-shadow: 1px 1px 2px #000, 0 0 1em #fff;
 
@@ -64,8 +68,8 @@
     font-size: 1.1em;
   }
   .menu {
-    margin-right: 2em;
-    width: 4em;
+    margin-right: 1.5em;
+    
     font-size: 1.3em;
     li {
       margin-left: 0.5em;
@@ -79,6 +83,9 @@
       width: 1.7em;
       height: 1.7em;
       margin: 0 0.3em;
+    }
+    button{
+      margin-left: 0.7em;
     }
   }
 }
