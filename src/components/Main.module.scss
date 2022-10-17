@@ -54,16 +54,12 @@
     width: 40%;
   }
 }
-.pic {
+.pic, .pic1{
   position: absolute;
-  top: 35%;
-  right: 13%;
-
   max-width: 53%;
   max-height: 63%;
   border-radius: 10%;
   box-shadow: 1px 1px 7px 1px darken(#f8f6f4, 15%);
-
   transition: 0.6s;
   display: block;
   &:hover {
@@ -71,20 +67,14 @@
     transform: scale(1.2);
   }
 }
+.pic {
+  top: 35%;
+  right: 13%;
+}
 .pic1 {
-  position: absolute;
   top: 25%;
   right: 10%;
-  max-width: 53%;
-  max-height: 63%;
-  border-radius: 10%;
-  box-shadow: 1px 1px 7px 1px darken(#f8f6f4, 15%);
-  transition: 0.6s;
-  display: block;
-  
   &:hover {
-    overflow: hidden;
-    transform: scale(1.2);
     z-index: 4;
   }
 }
@@ -121,7 +111,9 @@
   }
 }
 
-
-@media screen and (max-width: 1300px) {
-
+@media screen and (max-width: 1366px) {
+  .pic,.pic1{
+    max-width: 43%;
+    max-height: 53%;
+  }
 }
