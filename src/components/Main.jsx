@@ -16,11 +16,8 @@ export const Main = () => {
       <div className={style.content}>
         <div className={style.text}>
           <h1> Добро пожаловать в Наубайхана.kz</h1>
-
           <span> Посмотрите как мы работаем</span>
-          <button className={style.button}
-
-          >Скачать презентацию</button>
+          <button className={style.button}   >Скачать презентацию</button>
           <span>
             Вы сможете встретиться с управляющим одной из пекарен,
             задать ему вопросы лично, узнать нюансы и этапы производства выпечки.
