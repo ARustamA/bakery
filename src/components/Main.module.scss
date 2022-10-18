@@ -142,8 +142,8 @@
     }
     .pic,
     .pic1{
-      max-width: 33%;
-      max-height: 43%;
+      max-width: 43%;
+      max-height: 53%;
     }
     .pic{
       top: 20%;
@@ -158,10 +158,28 @@
    
     span{
       font-size: 1.1em;
-      margin: 1% 0;
+      margin: 2% 1%;
       line-height: 110%;
   
     } 
   }
   }
+}
+@media only screen and (max-width: 375px) {
+  .content{
+    h1{
+      margin: 0 auto;
+    }
+    button{
+      margin-left: 2em;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 11%;
+      width: 90%;
+    }
+    .pic,.pic1{display: none;}
+  }
+  
 }

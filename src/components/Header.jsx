@@ -15,17 +15,16 @@ export const Header = () => {
     { value: 'Форматы', href: "#formats", id: 3 },
     { value: 'Контакты', href: "#info", id: 5 },
   ]
-  const [open,setOpen]=useState(false);
-  const onClickOpen = (open)=>{
+  const [open, setOpen] = useState(false);
+  const onClickOpen = (open) => {
     setOpen(open);
   }
   return (
     <header className={style.header} >
-      <div className= {open ? style.open : style.burger } onClick={()=>onClickOpen(!open)}>
+      <div className={open ? style.close : style.burger} onClick={() => onClickOpen(!open)}>
         <span></span>
-        </div>
-        { <div className={open ? style.menuOpen : style.menuClose} >
-        
+      </div>
+      {<div className={open ? style.menuOpen : style.menuClose} >
         <ul className={style.menuItem}>
           {menuItems.map(item =>
             <li key={item.id}>
@@ -33,11 +32,17 @@ export const Header = () => {
             </li>
           )}
         </ul>
-      
+        <div className={style.contact}>
+          <h3>Пишите нам:</h3>
+          <a href="mailto:test@gmail.com">test@gmail.com</a>
+          <h3>Ждем звонка:</h3>
+          <a href="tel:+7800000000">+7 800 000 000</a>
 
-        </div> 
-        }
-      
+        </div>
+
+      </div>
+      }
+
       <a href="tel:+7800000000" className={style.phone}>+7 800 000 00 00</a>
       <div className={style.menu}>
         <ul className={style.ul}>
