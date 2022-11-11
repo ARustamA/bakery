@@ -64,6 +64,7 @@
     display: flex;
     flex-direction: column;
     background-color: #eeeeee;
+    height: 60%;
     p {
       margin-left: 5em;
       font-weight: 600;
@@ -112,3 +113,12 @@
 }
 
 
+@media only screen and (max-width: 425px) {
+  .popup{
+  width: 400px;
+  height: 500px;
+  }
+  .contentBottom {
+    margin: 0.5em;
+  }
+}

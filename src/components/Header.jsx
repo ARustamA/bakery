@@ -24,7 +24,7 @@ export const Header = () => {
       <div className={open ? style.close : style.burger} onClick={() => onClickOpen(!open)}>
         <span></span>
       </div>
-      {<div className={open ? style.menuOpen : style.menuClose} >
+      {<div className={open ? style.menuOpen : style.menuClose} onClick={e => e.stopPropagation()}>
         <ul className={style.menuItem}>
           {menuItems.map(item =>
             <li key={item.id}>

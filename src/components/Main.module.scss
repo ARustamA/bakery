@@ -187,5 +187,11 @@
     }
     .pic,.pic1{display: none;}
   }
-  
+  .arrowDawn {
+    z-index: 3;
+    cursor: pointer;
+    position: absolute;
+    bottom: 4em;
+    margin: 0 46%;
+  }
 }
