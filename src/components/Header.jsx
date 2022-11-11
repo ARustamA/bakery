@@ -2,8 +2,6 @@ import React, { useContext } from 'react'
 import { useState } from 'react';
 import AppContext from '../context'
 
-
-
 import style from './Header.module.scss';
 
 export const Header = () => {
@@ -27,8 +25,11 @@ export const Header = () => {
       {<div className={open ? style.menuOpen : style.menuClose} onClick={e => e.stopPropagation()}>
         <ul className={style.menuItem}>
           {menuItems.map(item =>
-            <li key={item.id}>
-              <a href={item.href}>{item.value}</a>
+            <li
+              key={item.id}>
+              <a
+                href={item.href}>{item.value}
+              </a>
             </li>
           )}
         </ul>

@@ -1,5 +1,7 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react'
 import AppContext from '../context'
+import { motion } from 'framer-motion';
+
 import img1 from "./image/stage/1.png";
 import img2 from "./image/stage/2.png";
 import img3 from "./image/stage/3.png";
@@ -16,8 +18,32 @@ import img13 from "./image/stage/XX.webp";
 
 import style from './Stages.module.scss';
 
+const stageAnimation = {
+   hidden: {
+      y: 100,
+      opacity: 0,
+
+   },
+   visible: custom => ({
+      y: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.2 }
+   }),
+}
+const textAnimation = {
+   hidden: {
+     y: 100,
+     opacity: 0,
+ 
+   },
+   visible: custom => ({
+     y: 0,
+     opacity: 1,
+     transition: { delay: custom * 0.2 }
+   }),
+ }
 export const Stages = () => {
-   const {popupActive, setPopupActive}=useContext(AppContext);
+   const { popupActive, setPopupActive } = useContext(AppContext);
    const stageItems = [
       { title: 'Подписание', text: 'договора концессии', img: img1, id: 1 },
       { title: 'Оплата', text: 'паушального взноса', img: img2, id: 2 },
@@ -37,28 +63,37 @@ export const Stages = () => {
          <div className={style.content}>
             <h2>Этапы работы</h2>
 
-            <div className={style.stageTable}>
+            <motion.div
+               initial='hidden'
+               whileInView='visible'
+               viewport={{ amount: 0.1, once: true }}
+
+               className={style.stageTable}>
 
                {
-                  stageItems.map(item =>
+                  stageItems.map((item,index) =>
                      <div className={style.items} key={item.id}>
                         <h4>{item.title}</h4>
                         <span>{item.text}</span>
                         <img src={item.img} alt={stageItems.title} />
                         {
                            !(item.id === 4 || item.id === 8) &&
-                           <svg
-                              clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m10.211 7.155c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591zm.289 7.563v-5.446l3.522 2.719z" fillRule="#fff" />
-                           </svg>
+                           <motion.svg
+                           custom={index+1}
+                           variants={stageAnimation}
 
+                              clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m10.211 7.155c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591zm.289 7.563v-5.446l3.522 2.719z" fillRule="#fff" />
+                           </motion.svg>
                         }
                      </div>
                   )}
-            </div>
+            </motion.div>
             <img className={style.picBakery} src={img13} alt="bakery" />
             <div className={style.bottom}>
                <h3>От идеи до пекарни один клик!</h3>
-               <button onClick={()=>setPopupActive(true)}>Запросить договор концессии</button>
+               <button onClick={() => setPopupActive(true)}>
+                  Запросить договор концессии
+               </button>
             </div>
 
          </div>
