@@ -9,7 +9,7 @@ import style from './Main.module.scss';
 
 const textAnimation = {
   hidden: {
-    x: -400,
+    x: -300,
     opacity: 0,
 
   },

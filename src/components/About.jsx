@@ -20,6 +20,18 @@ const textAnimation = {
   visible: custom => ({
     y: 0,
     opacity: 1,
+    transition: { delay: custom * 0.3 }
+  }),
+}
+const h3Animation = {
+  hidden: {
+    x: -300,
+    opacity: 0,
+
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
     transition: { delay: custom * 0.2 }
   }),
 }
@@ -81,11 +93,11 @@ export const About = () => {
             viewport={{ amount: 0.3, }}
             className={style.why}>
             {
-              (table.map((item,index) =>
-                <motion.div 
-                custom={index+1}
-                variants={stageAnimation}
-                className={style.field} key={item.id}>
+              (table.map((item, index) =>
+                <motion.div
+                  custom={index + 1}
+                  variants={stageAnimation}
+                  className={style.field} key={item.id}>
                   <h3 className={style.whyTitle} key={item.id}>
                     {item.title}
                   </h3>
@@ -103,10 +115,11 @@ export const About = () => {
 
           </motion.div>
           <span >
-            <motion.h3 custom={5} variants={textAnimation}>Все еще сомневаетесь в выборе? </motion.h3>
-            <motion.span custom={5} variants={textAnimation} className={style.txt}>
+            <motion.h3 custom={5} variants={h3Animation}>Все еще сомневаетесь в выборе? </motion.h3>
+            <motion.span custom={6} variants={textAnimation} className={style.txt}>
               Оставьте контакты и мы вам обязательно перезвоним.
-              <button onClick={() => setPopupActive(true)}>Оставить номер</button>
+              <button
+                onClick={() => setPopupActive(true)}>Оставить номер</button>
             </motion.span>
 
 
@@ -114,7 +127,7 @@ export const About = () => {
           </span>
         </div>
         <motion.img custom={3} variants={imgAnimation}
-        animate={{ x: [null, 100, 0] }}
+          animate={{ x: [null, 100, 0] }}
           src={img0} className={style.img0} alt="img0" />
 
         <img src={img1} className={style.img1} alt="img1" />
