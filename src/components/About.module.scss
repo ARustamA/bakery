@@ -172,7 +172,8 @@
 }
 @media screen and (max-width: 1366px) {
   section {
-    font-size: 0.9em;
+    content{font-size: 0.9em;}
+    
   }
 
   .why {
@@ -190,7 +191,8 @@
 }
 @media only screen and (max-width: 768px) {
   section {
-    font-size: 0.6em;
+    .content{
+    font-size: 0.6em;}
   }
   .content {
     display: flex;
@@ -203,7 +205,10 @@
 }
 @media only screen and (max-width: 425px) {
   section {
-    font-size: 0.5em;
+    .content{
+      font-size: 0.5em;
+    }
+    
   }
   .content{
     h2 {
