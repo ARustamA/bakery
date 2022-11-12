@@ -141,3 +141,54 @@
     text-shadow: 1px 1px 2px #322307, 0 0 1em #fff;
   }
 }
+
+@media screen and (max-width: 1366px) {
+  section {
+    content {
+      font-size: 0.9em;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  section {
+    content {
+      h2,
+      h4,
+      span {
+        font-size: 0.7em;
+        margin: 0.5em;
+      }
+    }
+  }
+  .stageTable {
+    gap: 0.8em;
+  }
+  .items {
+    h4 {
+      margin-bottom: 0.5em;
+    }
+    svg {
+      display: none;
+    }
+  }
+
+  .picBakery {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  h2{
+    margin: 1em;
+  }
+  .stageTable {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 45%;
+    margin-left: 8%;
+    gap: 0.5em;
+
+    .items {
+      font-size: 0.8em;
+    }
+  }
+}

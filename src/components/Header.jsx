@@ -28,6 +28,7 @@ export const Header = () => {
             <li
               key={item.id}>
               <a
+              onClick={() => onClickOpen(!open)}
                 href={item.href}>{item.value}
               </a>
             </li>
