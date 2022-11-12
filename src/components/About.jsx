@@ -84,9 +84,9 @@ export const About = () => {
             Мы, команда профессионалов из <b>Наубайхана.kz</b>,
             предлагаем готовое бизнес-решения для открытия собственной пекарни.
           </motion.h2>
-          <motion.span custom={3} variants={textAnimation}>
+          <motion.p custom={3} variants={textAnimation}>
             Почему Вам нужно выбрать именно нашу <b>Наубайхана.kz</b>?
-          </motion.span>
+          </motion.p>
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -97,7 +97,8 @@ export const About = () => {
                 <motion.div
                   custom={index + 1}
                   variants={stageAnimation}
-                  className={style.field} key={item.id}>
+                  className={style.field} 
+                  key={item.id}>
                   <h3 className={style.whyTitle} key={item.id}>
                     {item.title}
                   </h3>
@@ -121,9 +122,6 @@ export const About = () => {
               <button
                 onClick={() => setPopupActive(true)}>Оставить номер</button>
             </motion.span>
-
-
-
           </span>
         </div>
         <motion.img custom={3} variants={imgAnimation}

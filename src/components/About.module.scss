@@ -15,7 +15,12 @@
 .content {
   display: flex;
   flex-direction: column;
-  span {
+  p {
+    text-indent: 1em;
+    font-size: 1.5em;
+    margin: 2% 9%;
+  }
+  span{
     text-indent: 1em;
     font-size: 1.5em;
     margin: 2% 9%;
@@ -172,8 +177,9 @@
 }
 @media screen and (max-width: 1366px) {
   section {
-    content{font-size: 0.9em;}
-    
+    content {
+      font-size: 0.9em;
+    }
   }
 
   .why {
@@ -191,8 +197,9 @@
 }
 @media only screen and (max-width: 768px) {
   section {
-    .content{
-    font-size: 0.6em;}
+    .content {
+      font-size: 0.6em;
+    }
   }
   .content {
     display: flex;
@@ -205,31 +212,37 @@
 }
 @media only screen and (max-width: 425px) {
   section {
-    .content{
-      font-size: 0.5em;
+    .content {
+      font-size: 0.7em;
     }
-    
   }
-  .content{
+  .content {
     h2 {
-      width: 90%;
+      width: 70%;
+      margin-left: 5em;
+    }
+    .text {
+    
+      p {
+        width: 70%;
+        margin-left: 5em;
       }
+    }
   }
   .why {
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
     padding: 0 8em;
-    }
-    .field {
-      margin: 0.4em;
-    }
-  span {
-    margin: 2% 4%;
   }
-  h2 {
-    margin-left: 4%;
-    width: 80%;
+  .field {
+    margin: 0.4em;
+    .whyText {
+      span {
+        margin-left:0;
+      }
+    }
   }
+  
 
   .text {
     margin-top: 4em;
