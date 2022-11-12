@@ -177,7 +177,7 @@
   }
 }
 @media only screen and (max-width: 425px) {
-  h2{
+  h2 {
     margin: 1em;
   }
   .stageTable {
@@ -190,5 +190,11 @@
     .items {
       font-size: 0.8em;
     }
+  }
+
+  .bottom {
+    margin-top: 1em;
+    margin-left: 4em;
+    width: 70%;
   }
 }
